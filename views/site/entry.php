@@ -7,9 +7,9 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <?php $form = ActiveForm::begin(); ?>
 
-<?= $form->field($model, 'name') ?>
+<?= $form->field($model, 'name')->label('Имя') ?>
 
-<?= $form->field($model, 'email') ?>
+<?= $form->field($model, 'email')->label('Ваш E-Mail') ?>
 
 	<div class="form-group">
 		<?= Html::submitButton('Отправить', ['class' => 'btn btn-primary']) ?>
